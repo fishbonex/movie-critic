@@ -7,5 +7,12 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "movie-critic-e2e": {
+      "tags": []
+    },
+    "movie-critic": {
+      "tags": []
+    }
+  }
 }
