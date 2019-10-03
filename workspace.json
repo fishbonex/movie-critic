@@ -151,38 +151,42 @@
       },
       "schematics": {
         "@nrwl/angular:component": {
-          "styleext": "scss"
+          "style": "scss",
+          "styleext": "scss",
+          "prefix": "mc"
         }
       }
     },
-    "core-shell": {
+    "core-layout": {
       "projectType": "library",
-      "root": "libs/core/shell",
-      "sourceRoot": "libs/core/shell/src",
+      "root": "libs/core/layout",
+      "sourceRoot": "libs/core/layout/src",
       "prefix": "mc",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/core/shell/tsconfig.lib.json",
-              "libs/core/shell/tsconfig.spec.json"
+              "libs/core/layout/tsconfig.lib.json",
+              "libs/core/layout/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/core/shell/**"]
+            "exclude": ["**/node_modules/**", "!libs/core/layout/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/core/shell/jest.config.js",
-            "tsConfig": "libs/core/shell/tsconfig.spec.json",
-            "setupFile": "libs/core/shell/src/test-setup.ts"
+            "jestConfig": "libs/core/layout/jest.config.js",
+            "tsConfig": "libs/core/layout/tsconfig.spec.json",
+            "setupFile": "libs/core/layout/src/test-setup.ts"
           }
         }
       },
       "schematics": {
         "@nrwl/angular:component": {
-          "styleext": "scss"
+          "style": "scss",
+          "styleext": "scss",
+          "prefix": "mc"
         }
       }
     }
@@ -239,7 +243,8 @@
       "e2eTestRunner": "cypress"
     },
     "@nrwl/angular:library": {
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "style": "scss"
     }
   },
   "defaultProject": "movie-critic"

@@ -1,14 +1,14 @@
 import { async, TestBed } from '@angular/core/testing';
-import { CoreShellModule } from './core-shell.module';
+import { CoreLayoutModule } from './core-layout.module';
 
-describe('CoreShellModule', () => {
+describe('CoreLayoutModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CoreShellModule]
+      imports: [CoreLayoutModule]
     }).compileComponents();
   }));
 
   it('should create', () => {
-    expect(CoreShellModule).toBeDefined();
+    expect(CoreLayoutModule).toBeDefined();
   });
 });
